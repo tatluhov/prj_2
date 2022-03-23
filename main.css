@@ -96,24 +96,78 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
-.section-1-wrap-content-list {
- margin: 35px 0 50px;
+/*content-list*/
+.content-list {
+    padding: 35px 0 50px;
 }
 
-.section-1-wrap-content-list-items {
+.content-list .content-list-item {
     display: flex;
-    gap: 12px;
     align-items: center;
+    gap: 12px;
     margin-bottom: 25px;
 }
 
-.section-1-wrap-content-list p {
+
+.content-list .content-list-item-text {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
     color: #FFFFFF;
 }
+
+.content-list .content-list-item-img {
+    flex-shrink: 0;
+    width: 25.6px;
+    height: 25.6px;
+}
+
+.content-list-item-img img {
+    width: 100%;
+}
+/*****/
+
+/*content-list--large*/
+.content-list.content-list--large {
+    padding-top: 64px;
+}
+.content-list.content-list--large .content-list-item {
+    max-width: 600px;
+    gap: 42px;
+}
+
+.content-list.content-list--large .content-list-item-img {
+    width: 33.6px;
+    height: 33.6px;
+}
+
+.content-list.content-list--large .content-list-item-text {
+    font-size: 24px;
+    line-height: 42px;
+}
+/*****/
+
+/*content-list--small*/
+.content-list.content-list--small {
+    padding: 40px 0 20px;
+}
+.content-list.content-list--small .content-list-item {
+    /*margin-bottom: 15px;*/
+    max-width: 230px;
+    gap: 18px;
+}
+
+.content-list.content-list--small .content-list-item-img {
+    width: 16.8px;
+    height: 16.8px;
+}
+
+.content-list.content-list--small .content-list-item-text {
+    font-size: 16px;
+}
+/*****/
+
 
 .section-1-wrap-content-btn {
     display: inline-flex;
@@ -168,14 +222,14 @@ img {
     padding: 96px 0 100px;
 }
 
-.section-2-title {
+.section-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
 }
 
-.section-2-title h2 {
+.section-title h2 {
     font-family: 'Inter', sans-serif;
     font-size: 72px;
     line-height: 90px;
@@ -186,11 +240,11 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
-.section-2-title p {
+.section-title p {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.5px;
     color: #FFFFFF;
 }
@@ -244,6 +298,107 @@ img {
     letter-spacing: 0.5px;
     color: #FFFFFF;
     background-color: #1C1C1C;
+}
+
+.section-3 {
+    padding: 150px 0 100px;
+}
+
+.section-3-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section-3-wrap-content h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 72px;
+    line-height: 90px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, rgba(255,129,74,1) 0%, rgba(255,168,37,1) 37%, rgba(241,243,124,1) 100%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.section-4 {
+    padding: 150px 0 100px;
+}
+
+.section-4-wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-4-wrap-card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #202020;
+    border-radius: 10px;
+}
+
+.card-title {
+    margin-bottom: 37px;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+.card-price {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 96px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+.card-price .sup {
+    align-self: flex-start;
+    line-height: 35px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card-price .sub {
+    align-self: end;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.card-btn {
+    padding: 16px 72px;
+    margin-top: auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+.section-4-wrap-card.section-4-wrap-card-premium {
+    background-color: #060202;
+}
+
+.card-btn-premium {
+    padding: 2px;
+    margin-top: auto;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(255,129,74,1) 0%, rgba(255,168,37,1) 47%, rgba(255,168,37,1) 100%);
+}
+
+.card-btn-premium .card-btn {
+    background-color: #060202;
+    border: none;
 }
 
 
